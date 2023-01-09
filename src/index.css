@@ -1,0 +1,72 @@
+:root {
+  /* Colors */
+  --primary-color: #cddc39;
+  --light-primary-color: #f0f4c3;
+  --text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #607d8b;
+
+  /* Indents */
+  --xs-indent: 6px;
+  --sm-indent: 12px;
+  --md-indent: 18px;
+  --lg-indent: 24px;
+  --xl-indent: 48px;
+  --xxl-indent: 96px;
+
+  /* Fonts */
+  --base-font: 'Exo 2', 'Helvetica', 'Arial', sans-serif;
+  --xxl-text: 48px;
+  --xl-text: 36px;
+  --lg-text: 28px;
+  --md-text: 24px;
+  --sm-text: 18px;
+  --xs-text: 14px;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  text-size-adjust: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow: hidden auto;
+}
+
+body {
+  margin: 0;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: var(--base-font);
+  font-size: var(--sm-text);
+  font-style: normal;
+  line-height: 1.25;
+  color: var(--text-color);
+
+  width: 100%;
+  min-height: 100vh;
+
+  scroll-behavior: smooth;
+
+  background-color: var(--light-primary-color);
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+#simple-zustand-devtools-Store {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+}
