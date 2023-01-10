@@ -363,12 +363,15 @@
 }
 
 .mc_product__title {
+  flex: 1 0 var(--xxl-indent);
   margin: 0;
+  padding-right: var(--md-text);
   font-size: var(--md-text);
   font-weight: bold;
 }
 
 .mc_product_img {
+  flex: 0 0 auto;
   width: var(--xxl-indent);
   height: var(--xxl-indent);
   object-fit: cover;
