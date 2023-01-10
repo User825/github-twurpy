@@ -74,7 +74,7 @@ export const MarketCatalogue = () => {
     <>
       <Header
         title="Market Catalogue"
-        imgSrc={`${process.env.PUBLIC_URL}/assets/market.png`}
+        imgSrc="https://cdn-icons-png.flaticon.com/512/3703/3703259.png"
         hasBackButton
       />
       <div className="mc_wrapper">
@@ -87,7 +87,7 @@ export const MarketCatalogue = () => {
           >
             <img
               className="sort_buttons__icon"
-              src={`${process.env.PUBLIC_URL}/assets/arrow-down.png`}
+              src="https://cdn-icons-png.flaticon.com/512/57/57055.png"
               alt="sort to down"
             />
           </button>
@@ -99,7 +99,7 @@ export const MarketCatalogue = () => {
           >
             <img
               className="sort_buttons__icon"
-              src={`${process.env.PUBLIC_URL}/assets/arrow-up.png`}
+              src="https://cdn-icons-png.flaticon.com/512/4655/4655143.png"
               alt="sort to up"
             />
           </button>

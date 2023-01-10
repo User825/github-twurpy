@@ -8,7 +8,7 @@ export const Main = () => {
     <>
       <Header
         title="Test cases"
-        imgSrc={`${process.env.PUBLIC_URL}/assets/qa.png`}
+        imgSrc="https://cdn-icons-png.flaticon.com/512/8422/8422383.png"
       />
       <div className="content">
         <ul className="mp_link-box">
@@ -16,7 +16,7 @@ export const Main = () => {
             <Link to="/marketCatalogue/">
               <Card
                 text="Market Catalogue"
-                imgSrc={`${process.env.PUBLIC_URL}/assets/market.png`}
+                imgSrc="https://cdn-icons-png.flaticon.com/512/3703/3703259.png"
               />
             </Link>
           </li>
