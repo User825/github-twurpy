@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from '../components/Header';
 
+// Components
 const CatalogueList = ({ productList, onClick, selectedId, detailsText }) =>
   productList.map(({ title, price, id, image }) => (
     <div
