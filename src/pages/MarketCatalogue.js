@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Header } from '../components/Header';
 
 // Search utils
@@ -129,14 +129,14 @@ export const MarketCatalogue = () => {
       });
   };
 
-  const onSearch = ({ target: { value } }) => {
+  const onSearch = useCallback(({ target: { value } }) => {
     if (value) {
       const newProductList = search(false, value, allProducts);
       setProductList(newProductList);
     } else {
       setProductList(allProducts);
     }
-  };
+  });
 
   return (
     <>
