@@ -2,41 +2,14 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Header } from '../components/Header';
 
 // Search utils
-const fuzzySearch = (query, word) => {
-  const patternArray = [...query];
-  const wordArray = Array.from(word);
-  let matchedIndexes = [];
-  let matchedCharacters = [];
-
-  for (let i = 0; i < patternArray.length; i++) {
-    let currentIndex = wordArray.indexOf(patternArray[i]);
-
-    while (!!~currentIndex) {
-      if (!matchedCharacters.includes(patternArray[i])) {
-        matchedCharacters.push(patternArray[i]);
-      }
-
-      matchedIndexes.push(currentIndex);
-
-      currentIndex = wordArray.indexOf(patternArray[i], currentIndex + 1);
-    }
-  }
-
-  return matchedCharacters.length === patternArray.length;
-};
+const fuzzySearch = (query, list) => {};
 
 const search = (hasFuzzySearch, searchQuery, list) => {
   let results = [];
 
   if (hasFuzzySearch) {
-    list.forEach(({ title }, index, arr) => {
-      const query = searchQuery.toLowerCase();
-      const word = title.toLowerCase();
-
-      if (fuzzySearch(query, word)) {
-        results.push(arr[index]);
-      }
-    });
+    // return fuzzySearch(searchQuery, list);
+    return results;
   } else {
     list.forEach(({ title }, index, arr) => {
       if (title.toLowerCase().includes(searchQuery.toLowerCase())) {
