@@ -1,6 +1,17 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Header } from '../components/Header';
 
+// const query = 'am';
+// const list = [
+//   { title: 'fuzzy'},
+//   { title: 'maskva'},
+//   { title: 'mama'},
+//   { title: 'search'},
+//   { title: 'algorithm'},
+//   { title: 'utility'},
+// ];
+// const result = fuzzySearch(query, list);
+// console.log(result) // [{ title: 'mama'}, { title: 'algorithm'}]
 // Search utils
 const fuzzySearch = (query, list) => {};
 
